@@ -1,0 +1,184 @@
+body {
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+  
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  max-width: 1100px;
+  margin: auto;  
+}
+  
+.intro-section {
+  flex: 1;
+  color: white;
+  margin: 3rem 2rem;
+  text-align: start;  
+}
+  
+.content_left_title {
+  font-size: 40px;
+}
+  
+.content_left_text {
+  opacity: 0.8;
+}
+  
+.form-section {
+  flex: 1;
+  text-align: center;
+  max-width: 550px;
+  margin: 0 1rem;
+}
+  
+.form-section button {
+  width: 100%;
+  background-color: hsl(248, 32%, 49%);
+  padding: 1rem 5rem;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 1.2rem;
+  border: none;
+  outline: none;
+  box-shadow: 0px 7px rgba(116, 111, 151, 0.4);
+  font-size: 14px;
+  cursor: pointer;
+}
+  
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-bottom: 0;
+  box-shadow: 0px 7px rgba(116, 111, 151, 0.4);
+}
+  
+.form input {
+  padding: 16px 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(185, 182, 211);
+  font-size: 17px;
+  font-weight: 550;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-controls.success input{
+  border-color: #2ecc71 ;
+}
+
+.form-controls.error input{
+  border-color: red ;
+}
+  
+.form-controls {
+  position: relative;
+  margin-bottom: 1.2rem;
+  padding-bottom: 20px;
+}
+
+.form-controls img {
+  visibility: hidden;
+  position: absolute;
+  right: 3%;
+  top: 17%;
+}
+
+.form-controls.success img{
+  visibility: hidden;
+}
+
+.form-controls.error img {
+  visibility: visible;
+}
+
+.form-controls small {
+  visibility: hidden;
+  position: absolute;
+  right: 20%;
+  bottom: -20%;
+  font-size: 70%;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+}
+
+.form-controls.error small {
+  visibility: visible;
+}
+
+.form button {
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  padding: 18px 0 10px 0;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px hsl(154, 40%, 45%);
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+  
+.form p {
+  font-size: 11px;
+  color: hsl(0, 25%, 77%);
+  padding: 1rem 1rem 0;
+  margin: 0;
+}
+  
+.form p a {
+  color: rgb(219, 96, 96);
+  font-weight: 600;
+  text-decoration: none;
+}
+  
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(./images/bg-intro-mobile.png);
+    padding-bottom: 226px;
+    position: relative;
+  }
+  .intro-section {
+    text-align: center;
+    margin: 3rem auto;
+  }
+  
+  .form-section {
+    min-width: 300px;
+  }
+  
+  .form {
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .content {
+    margin: 1.5rem;
+  }
+  .content_left_title {
+    font-size: 27px;
+  }
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}

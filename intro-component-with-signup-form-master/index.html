@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="intro-section">
+      <h1 class="content_left_title">Learn to code by watching others</h1>
+      <p class="content_left_text">See how experienced developers solve problems in real-time.
+        Watching scripted tutorials great, but understanding how delevelopers think is invaluable</p>
+    </div>
+
+    <div class="form-section">
+      <button><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+      
+      <form class="form">
+        
+        <div class="form-controls">
+          <input placeholder="First Name" type="text" required maxlength="20" id="firstname" autocomplete="off"/>
+          <img src="./images/icon-error.svg"/>
+          <small></small>
+        </div>
+        
+        <div class="form-controls">
+          <input placeholder="Last Name" type="text" required id="lastname" autocomplete="off"/>
+          <img src="./images/icon-error.svg"/>
+          <small></small>
+          
+        </div>
+        
+        <div class="form-controls">
+          <input placeholder="Email Address" type="email" required id="email" autocomplete="off"/>
+          <img src="./images/icon-error.svg"/>
+          <small></small>
+        </div>
+        
+        <div class="form-controls">
+          <input placeholder="Password" type="password" required minlength="5" id="password"/>
+          <img src="./images/icon-error.svg"/>
+          <small></small>
+        </div>
+        
+        <button id="btn-submit">CLAIM YOUR FREE TRIAL</button>
+        <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      
+      </form>
+    </div>
+  </div>
+  
+  <script src="/intro-component-with-signup-form-master/script.js"></script>
+</body>
+<footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aiashwarj kr surin</a>.
+  </p>
+</footer>
+</html>
