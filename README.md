@@ -1,2 +1,2 @@
 # FrontEnd-Mentor
-back-end and front-end development
+Small project
